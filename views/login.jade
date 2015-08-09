@@ -1,0 +1,21 @@
+doctype html
+html 
+	head 
+		meta(charset='UTF-8')
+		title= testGame_LoginPage
+	body
+		h1 部屋名入力してください．
+		p 作成または入場
+
+		form(action="/game" method='post')
+			input(type="text", name="create" placeholder="create Room")
+			button(type="submit")作成
+
+			br
+			br
+			br
+
+			input(type="text", name="join" placeholder="join Room")
+			button(type="submit")参加
+
+
